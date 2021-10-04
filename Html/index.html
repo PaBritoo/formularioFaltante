@@ -2,9 +2,58 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-        <title>LANÇAMENTO | FALTANTES</title>
-</head>
+    <title>LANÇAMENTOS | FALTANTES</title>
+    <link rel="stylesheet" href="css/customer.css">
+    <script src="javascript/script.js"></script>
+   
+    </head>
+
 <body>
     
+    <div class="box">
+        <form method="POST" action="cadastros/cadastro.php">
+            <fieldset>
+                <legend><b>CONTROLE DE FALTANTES</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type= "text" name="linha" id="linha" class="inputUser" required>
+                    <label for="linha" class="labelInput" >Linha</label>
+                </div>
+                <br><br>
+            
+                
+                <div class="inputBox">
+                    <input type= "text" name="chassi" id="chassi" class="inputUser" required>
+                    <label for="chassi" class="labelInput" >Chassi</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type= "text" name="peca" id="peca" class="inputUser" required>
+                    <label for="peca" class="labelInput" >P.N Peça</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type= "number" name="quantidade" id="quantidade" class="inputUser" required>
+                    <label for="quantidade" class="labelInput" >Quantidade</label>
+                </div>
+                <br><br>
+
+
+                <div class="inputBox">
+                    <input type= "text" name="descricao" id="descricao" class="inputUser" required>
+                    <label for="descricao" class="labelInput" >Descrição</label>
+                </div>
+                <br><br>
+                
+                
+                <input onclick="cadastrar();" type="submit" name="botao" id="botao"> 
+
+                           
+            </fieldset>
+        </form>
+    </div>
+
 </body>
 </html>
