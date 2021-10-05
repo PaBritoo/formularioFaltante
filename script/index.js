@@ -1,17 +1,15 @@
 const express = require("express");
-const controleLinha = express();
+const app = express();
 
 
-controleLinha.get("/", function (req, res){
-    res.send("");
-})
-
-
+app.get("/",function(req, res){
+    res.sendFile(__dirname + "\index.html");
+});
 
 
 
 
 
-controleLinha.listen(5441, function(){
-    console.log("Servidor Rodando!");
+app.listen(5441 , function(){
+    console.log("Servidor rodando em : localhost:5441");
 });
